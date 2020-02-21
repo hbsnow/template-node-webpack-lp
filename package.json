@@ -1,0 +1,27 @@
+{
+  "name": "lp-template",
+  "version": "1.0.0",
+  "main": "./public/index.html",
+  "repository": "https://github.com/hbsnow/lp-template.git",
+  "author": "hbsnow <yuki.4uing@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build src/*.pug",
+    "dev": "parcel src/*.pug"
+  },
+  "devDependencies": {
+    "@parcel/validator-eslint": "^2.0.0-alpha.3",
+    "eslint": "^6.8.0",
+    "parcel": "^2.0.0-alpha.3.2",
+    "pug": "^2.0.4",
+    "sass": "^1.25.0"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}
