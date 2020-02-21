@@ -1535,7 +1535,7 @@
     serialize-to-js "^1.1.1"
     terser "^3.7.3"
 
-"@parcel/validator-eslint@^2.0.0-alpha.3":
+"@parcel/validator-eslint@2.0.0-alpha.3":
   version "2.0.0-alpha.3"
   resolved "https://registry.yarnpkg.com/@parcel/validator-eslint/-/validator-eslint-2.0.0-alpha.3.tgz#f38ac9ba9ca542724cbef1f3a365ac9dd5c526ed"
   integrity sha512-UgM1GbG+CeMdEgkpCzEhVvT/a6GBn0tdY0JYB6mtPKMD9slyapOWL/SrKpAhnWG7H39I9GOUV+bP22pX8gbCUw==
@@ -3151,7 +3151,7 @@ eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@^6.8.0:
+eslint@6.8.0:
   version "6.8.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.8.0.tgz#62262d6729739f9275723824302fb227c8c93ffb"
   integrity sha512-K+Iayyo2LtyYhDSYwz5D5QdWw0hCacNzyq1Y821Xna2xSJj7cijoLLYmLxTQgcgZ9mC61nryMy9S7GRbYpI5Ig==
@@ -5046,7 +5046,7 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
-parcel@^2.0.0-alpha.3.2:
+parcel@2.0.0-alpha.3.2:
   version "2.0.0-alpha.3.2"
   resolved "https://registry.yarnpkg.com/parcel/-/parcel-2.0.0-alpha.3.2.tgz#d59de34f491608197d4f9e40688545d62aada08e"
   integrity sha512-FG8JZtY2MAhxYANtLUlRbPNhTqtDB6zDQ+GVPBgzs6xlzyWSEdzayJ2a25Nnee+SBptV9nSHavkMrtP3YLrnAg==
@@ -5737,7 +5737,7 @@ pug-walk@^1.1.8:
   resolved "https://registry.yarnpkg.com/pug-walk/-/pug-walk-1.1.8.tgz#b408f67f27912f8c21da2f45b7230c4bd2a5ea7a"
   integrity sha512-GMu3M5nUL3fju4/egXwZO0XLi6fW/K3T3VTgFQ14GxNi8btlxgT5qZL//JwZFm/2Fa64J/PNS8AZeys3wiMkVA==
 
-pug@^2.0.4:
+pug@2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pug/-/pug-2.0.4.tgz#ee7682ec0a60494b38d48a88f05f3b0ac931377d"
   integrity sha512-XhoaDlvi6NIzL49nu094R2NA6P37ijtgMDuWE+ofekDChvfKnzFal60bhSdiy8y2PBO6fmz3oMEIcfpBVRUdvw==
@@ -6200,7 +6200,7 @@ safer-eval@^1.3.0:
   dependencies:
     clones "^1.2.0"
 
-sass@^1.25.0:
+sass@1.25.0:
   version "1.25.0"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.25.0.tgz#f8bd7dfbb39d6b0305e27704a8ebe637820693f3"
   integrity sha512-uQMjye0Y70SEDGO56n0j91tauqS9E1BmpKHtiYNQScXDHeaE9uHwNEqQNFf4Bes/3DHMNinB6u79JsG10XWNyw==
