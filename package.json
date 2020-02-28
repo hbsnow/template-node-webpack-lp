@@ -7,7 +7,15 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build src/*.pug",
-    "dev": "parcel src/*.pug"
+    "dev": "parcel src/*.pug",
+    "lint": "eslint '**/*.js' && stylelint '**/*.scss' && prettier --check '**/*.{js,scss}'",
+    "lintfix": "eslint --fix '**/*.js' && stylelint --fix '**/*.scss'"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "hooks": {
+    "pre-commit": "npm prettier --write '**/*.{js,scss}"
   },
   "devDependencies": {
     "@parcel/validator-eslint": "2.0.0-nightly.130",
@@ -16,10 +24,10 @@
     "eslint-plugin-prettier": "3.1.2",
     "parcel": "2.0.0-nightly.128",
     "prettier": "1.19.1",
-    "pug": "2.0.4",
-    "sass": "1.26.1"
-  },
-  "engines": {
-    "node": ">=12"
+    "pug-cli": "github:pugjs/pug-cli#master",
+    "sass": "1.26.1",
+    "stylelint": "^13.2.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-prettier": "^1.1.2"
   }
 }
