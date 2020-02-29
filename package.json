@@ -44,7 +44,7 @@
     "pug-cli": "github:pugjs/pug-cli#master",
     "regenerator-runtime": "0.13.3",
     "rimraf": "3.0.2",
-    "sass": "1.26.1",
+    "sass": "1.26.2",
     "sass-loader": "8.0.2",
     "stylelint": "13.2.0",
     "stylelint-config-prettier": "8.0.1",
