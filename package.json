@@ -5,41 +5,57 @@
   "author": "hbsnow <yuki.4uing@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prebuild": "run-p clean",
+    "prebuild": "run-p clean lintfix",
     "build": "run-p build:*",
     "build:html": "pug src -o dist",
     "build:webpack": "webpack --config webpack.prod.js",
-    "build:img": "cpx 'src/assets/img/**/*' ./dist/assets/img",
-    "predev": "run-p clean",
+    "build:img": "cpx 'src/assets/img/**/*' dist/assets/img",
+    "predev": "run-p clean lintfix",
     "dev": "run-p dev:* serve",
     "dev:html": "pug src -o dist -w",
     "dev:webpack": "webpack --watch --config webpack.dev.js",
     "dev:img": "cpx 'src/assets/img/**/*' ./dist/assets/img -w",
-    "lint": "eslint '**/*.js' && stylelint '**/*.scss' && prettier --check '**/*.{js,scss}'",
-    "lintfix": "eslint --fix '**/*.js' && stylelint --fix '**/*.scss'",
+    "lint": "eslint '.*.js' 'src/**/*.js' && stylelint '**/*.scss'",
+    "lintfix": "eslint --fix '.*.js' 'src/**/*.js' && stylelint --fix '**/*.scss'",
     "serve": "browser-sync dist -w",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist && mkdir dist"
   },
   "engines": {
     "node": ">=12"
   },
-  "hooks": {
-    "pre-commit": "npm run lintfix"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{scss,css}": [
+      "stylelint --fix",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@babel/core": "7.8.6",
     "@babel/preset-env": "7.8.6",
+    "autoprefixer": "^9.7.4",
     "babel-loader": "8.0.6",
     "browser-sync": "2.26.7",
     "core-js": "3.6.4",
     "cpx": "1.5.0",
     "css-loader": "3.4.2",
+    "cssnano": "^4.1.10",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
     "eslint-plugin-prettier": "3.1.2",
     "husky": "4.2.3",
     "mini-css-extract-plugin": "0.9.0",
     "npm-run-all": "4.1.5",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
     "prettier": "1.19.1",
     "pug-cli": "github:pugjs/pug-cli#master",
     "regenerator-runtime": "0.13.3",
@@ -54,5 +70,7 @@
     "webpack-fix-style-only-entries": "0.4.0",
     "webpack-merge": "4.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }

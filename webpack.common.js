@@ -24,7 +24,12 @@ module.exports = {
       },
       {
         test: /\.scss/,
-        use: [MiniCssExtract.loader, 'css-loader', 'sass-loader'],
+        use: [
+          MiniCssExtract.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
     ],
   },
