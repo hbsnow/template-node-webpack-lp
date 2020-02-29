@@ -1,3 +1,7 @@
-@import 'normalize.css/normalize.css';
+@charset "UTF-8";
 
-@import 'hoge';
+@import '~normalize.css/normalize.css';
+@import 'variables';
+@import 'mixins';
+
+@import 'base';

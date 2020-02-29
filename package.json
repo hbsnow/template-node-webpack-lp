@@ -15,8 +15,8 @@
     "dev:html": "pug src -o dist -w",
     "dev:webpack": "webpack --watch --config webpack.dev.js",
     "dev:img": "cpx 'src/assets/img/**/*' ./dist/assets/img -w",
-    "lint": "eslint '.*.js' 'src/**/*.js' && stylelint '**/*.scss'",
-    "lintfix": "eslint --fix '.*.js' 'src/**/*.js' && stylelint --fix '**/*.scss'",
+    "lint": "eslint '.*.js' 'src/**/*.js' && stylelint '**/*.scss' && secretlint '**/*'",
+    "lintfix": "eslint --fix '.*.js' 'src/**/*.js' && stylelint --fix '**/*.scss' && secretlint '**/*'",
     "serve": "browser-sync dist -w",
     "clean": "rimraf dist && mkdir dist"
   },
@@ -29,6 +29,9 @@
     }
   },
   "lint-staged": {
+    "*": [
+      "secretlint"
+    ],
     "*.js": [
       "eslint --fix",
       "git add"
@@ -41,6 +44,7 @@
   "devDependencies": {
     "@babel/core": "7.8.6",
     "@babel/preset-env": "7.8.6",
+    "@secretlint/secretlint-rule-preset-recommend": "^0.6.0",
     "autoprefixer": "9.7.4",
     "babel-loader": "8.0.6",
     "browser-sync": "2.26.7",
@@ -62,6 +66,7 @@
     "rimraf": "3.0.2",
     "sass": "1.26.2",
     "sass-loader": "8.0.2",
+    "secretlint": "^0.6.0",
     "stylelint": "13.2.0",
     "stylelint-config-prettier": "8.0.1",
     "stylelint-prettier": "1.1.2",

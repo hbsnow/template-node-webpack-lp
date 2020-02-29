@@ -1,0 +1,13 @@
+@mixin mq($state: up) {
+  $prefix: min;
+  $bp: $breakpoint;
+
+  @if $state == down {
+    $prefix: max;
+    $bp: $breakpoint - 0.2px;
+  }
+
+  @media screen and (#{$prefix}-width: $bp) {
+    @content;
+  }
+}
