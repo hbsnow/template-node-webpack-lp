@@ -899,7 +899,7 @@
     "@secretlint/types" "^0.6.0"
     "@textlint/regexp-string-matcher" "^1.1.0"
 
-"@secretlint/secretlint-rule-preset-recommend@^0.6.0":
+"@secretlint/secretlint-rule-preset-recommend@0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-0.6.0.tgz#fdfc70974867b7b5d529ded41ec03df9036b2bf2"
   integrity sha512-KL5Wy2tbsnev2ukprhUOjJCYKttvYaYnTKcRIqYXLx0K3ChD87f3SuwtbCJ282GSJzh8LmRHKGO7xV26DX+CGA==
@@ -7075,7 +7075,7 @@ schema-utils@^2.6.0, schema-utils@^2.6.1:
     ajv "^6.10.2"
     ajv-keywords "^3.4.1"
 
-secretlint@^0.6.0:
+secretlint@0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/secretlint/-/secretlint-0.6.0.tgz#e1fac35c057a8798c187ef5ec91aebf356825c14"
   integrity sha512-2sZFqmglHyAJ9oHIVP9v/77w0JEBop1aHyMoq3aJ5EvmNfV/jIUwFKfHNLXJHc1LK1kmVaKVQ+e0ua4rcvCGTw==
