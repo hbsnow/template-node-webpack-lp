@@ -22,3 +22,7 @@
 ### webpackのhashをパラメータに変更する
 
 現状、hashを`assets/js/[name].[hash].js`から`assets/js/[name].js?[hash]`に変更することはできない。これはwebpack-fix-style-only-entriesがこの形式に対応していないからで、[そのうち解決する問題](https://github.com/fqborges/webpack-fix-style-only-entries/pull/27)かもしれない。
+
+### webpack-dev-serverに変更する
+
+pugのHMRがきかないので、現状browser-syncでやるのが無難
