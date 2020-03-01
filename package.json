@@ -1,7 +1,7 @@
 {
-  "name": "lp-template",
+  "name": "template-node-webpack-lp",
   "version": "1.0.0",
-  "repository": "https://github.com/hbsnow/lp-template.git",
+  "repository": "https://github.com/hbsnow/template-node-webpack-lp.git",
   "author": "hbsnow <yuki.4uing@gmail.com>",
   "license": "MIT",
   "scripts": {
