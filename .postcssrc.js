@@ -11,7 +11,5 @@ module.exports = (ctx) => {
     }
   }
 
-  return {
-    ...plugins,
-  }
+  return { plugins }
 }

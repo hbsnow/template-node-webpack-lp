@@ -1,14 +1,16 @@
 const path = require('path')
-const MiniCssExtract = require('mini-css-extract-plugin')
-const FixStyleOnlyEntries = require('webpack-fix-style-only-entries')
+const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const globule = require('globule')
 
-module.exports = {
+const configs = {
   entry: {
     main: `./src/assets/js/main.js`,
     'main.css': `./src/assets/css/main.scss`,
   },
   output: {
-    filename: 'assets/js/[name].js',
+    filename: 'assets/js/[name].[hash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -23,9 +25,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.scss/,
+        test: /\.(sa|sc|c)ss$/,
+        exclude: /node_modules/,
         use: [
-          MiniCssExtract.loader,
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -47,12 +50,36 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.pug$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'pug-loader',
+          },
+        ],
+      },
     ],
   },
   plugins: [
-    new FixStyleOnlyEntries(),
-    new MiniCssExtract({
-      filename: 'assets/css/[name]',
+    new MiniCssExtractPlugin({
+      filename: './assets/css/main.[hash].css',
     }),
+    new FixStyleOnlyEntriesPlugin(),
   ],
 }
+
+const pugFiles = globule.find('./src/**/*.pug', {
+  ignore: ['./src/**/_*/*.pug', './src/**/_*.pug'],
+})
+
+pugFiles.forEach((file) => {
+  configs.plugins.push(
+    new HtmlWebpackPlugin({
+      template: file,
+      filename: `${file.replace('./src/', '').replace('.pug', '.html')}`,
+    })
+  )
+})
+
+module.exports = configs
