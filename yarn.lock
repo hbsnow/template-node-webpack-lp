@@ -937,11 +937,6 @@
     "@secretlint/types" "^0.7.0"
     istextorbinary "^3.3.0"
 
-"@secretlint/types@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-0.6.0.tgz#fbc1323870ad12a1262ea3ed52803d232ef60622"
-  integrity sha512-/H5t3F7AU9frzPSt+t/YQMCbxnS7rV7FJPQSmctGTc/2xDjS1WnbBQlIfzep1sAvnOyT0BdVvlWITdtHJipDnQ==
-
 "@secretlint/types@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-0.7.0.tgz#75a283118ac0b03e629488fe079a335c986c2cb0"
@@ -8658,10 +8653,10 @@ webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@4.41.6:
-  version "4.41.6"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.6.tgz#12f2f804bf6542ef166755050d4afbc8f66ba7e1"
-  integrity sha512-yxXfV0Zv9WMGRD+QexkZzmGIh54bsvEs+9aRWxnN8erLWEOehAKUTeNBoUbA6HPEZPlRo7KDi2ZcNveoZgK9MA==
+webpack@4.42.0:
+  version "4.42.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.42.0.tgz#b901635dd6179391d90740a63c93f76f39883eb8"
+  integrity sha512-EzJRHvwQyBiYrYqhyjW9AqM90dE4+s1/XtCfn7uWg6cS72zH+2VPFAlsnW0+W0cDi0XRjNKUMoJtpSi50+Ph6w==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
