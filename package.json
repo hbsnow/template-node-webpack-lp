@@ -40,8 +40,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.8.6",
-    "@babel/preset-env": "7.8.6",
+    "@babel/core": "7.8.7",
+    "@babel/preset-env": "7.8.7",
     "@secretlint/secretlint-rule-preset-recommend": "0.7.2",
     "autoprefixer": "9.7.4",
     "babel-loader": "8.0.6",
