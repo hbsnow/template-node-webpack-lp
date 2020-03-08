@@ -68,7 +68,7 @@
     "rimraf": "3.0.2",
     "sass": "1.26.2",
     "sass-loader": "8.0.2",
-    "secretlint": "0.7.3",
+    "secretlint": "0.8.0",
     "stylelint": "13.2.0",
     "stylelint-config-prettier": "8.0.1",
     "stylelint-prettier": "1.1.2",
