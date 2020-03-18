@@ -990,11 +990,6 @@
     "@secretlint/types" "^0.9.2"
     istextorbinary "^3.3.0"
 
-"@secretlint/types@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-0.7.1.tgz#32b7e0cebeac15761c430fa1d631a56bf94e33e7"
-  integrity sha512-qClE/HqOAOJy75R5QbMh3QGK62r5nLoCNQ1UFaF/LNBAa0iZ6walPnHkleH/0KvHRc2RE99obeimw0iHKJvUXA==
-
 "@secretlint/types@^0.9.2":
   version "0.9.2"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-0.9.2.tgz#41fbc376b59a4452cfe0ebe4275714933ef700aa"
