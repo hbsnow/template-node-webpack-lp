@@ -42,7 +42,7 @@
   "devDependencies": {
     "@babel/core": "7.9.6",
     "@babel/preset-env": "7.9.6",
-    "@secretlint/secretlint-rule-preset-recommend": "1.1.0",
+    "@secretlint/secretlint-rule-preset-recommend": "2.0.0",
     "autoprefixer": "9.7.6",
     "babel-loader": "8.1.0",
     "browser-sync": "2.26.7",
