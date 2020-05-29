@@ -66,7 +66,7 @@
     "pug-loader": "2.4.0",
     "regenerator-runtime": "0.13.5",
     "rimraf": "3.0.2",
-    "sass": "1.26.5",
+    "sass": "1.26.7",
     "sass-loader": "8.0.2",
     "secretlint": "2.0.0",
     "stylelint": "13.5.0",
