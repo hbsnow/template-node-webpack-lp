@@ -70,7 +70,7 @@
     "sass-loader": "8.0.2",
     "secretlint": "2.1.0",
     "stylelint": "13.6.1",
-    "stylelint-config-prettier": "8.0.1",
+    "stylelint-config-prettier": "8.0.2",
     "stylelint-prettier": "1.1.2",
     "webpack": "4.43.0",
     "webpack-cli": "3.3.12",
