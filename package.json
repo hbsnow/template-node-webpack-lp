@@ -43,7 +43,7 @@
     "@babel/core": "7.10.3",
     "@babel/preset-env": "7.10.3",
     "@secretlint/secretlint-rule-preset-recommend": "2.1.0",
-    "autoprefixer": "9.8.2",
+    "autoprefixer": "9.8.4",
     "babel-loader": "8.1.0",
     "browser-sync": "2.26.7",
     "core-js": "3.6.5",
