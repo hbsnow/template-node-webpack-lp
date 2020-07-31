@@ -45,7 +45,7 @@
     "@secretlint/secretlint-rule-preset-recommend": "2.1.0",
     "autoprefixer": "9.8.5",
     "babel-loader": "8.1.0",
-    "browser-sync": "2.26.10",
+    "browser-sync": "2.26.12",
     "core-js": "3.6.5",
     "cpx": "1.5.0",
     "css-loader": "3.6.0",
