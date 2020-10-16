@@ -74,7 +74,7 @@
     "stylelint-prettier": "1.1.2",
     "webpack": "4.44.2",
     "webpack-cli": "3.3.12",
-    "webpack-fix-style-only-entries": "0.5.1",
+    "webpack-fix-style-only-entries": "0.6.0",
     "webpack-merge": "5.1.4"
   },
   "dependencies": {
