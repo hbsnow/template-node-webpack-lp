@@ -46,7 +46,7 @@
     "autoprefixer": "10.0.4",
     "babel-loader": "8.2.2",
     "browser-sync": "2.26.13",
-    "core-js": "3.8.0",
+    "core-js": "3.8.1",
     "cpx": "1.5.0",
     "css-loader": "5.0.1",
     "cssnano": "4.1.10",
