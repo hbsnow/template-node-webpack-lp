@@ -67,7 +67,7 @@
     "regenerator-runtime": "0.13.7",
     "rimraf": "3.0.2",
     "sass": "1.30.0",
-    "sass-loader": "10.1.0",
+    "sass-loader": "10.1.1",
     "secretlint": "2.1.1",
     "stylelint": "13.8.0",
     "stylelint-config-prettier": "8.0.2",
