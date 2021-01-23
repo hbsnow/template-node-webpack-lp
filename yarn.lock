@@ -8537,10 +8537,10 @@ webpack-cli@4.2.0:
     v8-compile-cache "^2.2.0"
     webpack-merge "^4.2.2"
 
-webpack-fix-style-only-entries@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/webpack-fix-style-only-entries/-/webpack-fix-style-only-entries-0.6.0.tgz#193ab04c63cba5c1da92d5ec34a48aa1448a853c"
-  integrity sha512-9d3S+Y3b90D5OFUxO6bA/o7Ebx0uGWSPoVepvMvMEup7XefqdrDPEDI10tuFhxERD/xkMJAViakE1NPZn9zA+w==
+webpack-fix-style-only-entries@0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/webpack-fix-style-only-entries/-/webpack-fix-style-only-entries-0.6.1.tgz#8e517085cc3426ccd1cb37ff2897b993563a424a"
+  integrity sha512-wyIhoxS3DD3Fr9JA8hQPA+ZmaWnqPxx12Nv166wcsI/0fbReqyEtiIk2llOFYIg57WVS3XX5cZJxw2ji70R0sA==
 
 webpack-merge@5.7.2:
   version "5.7.2"
